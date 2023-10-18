@@ -1,0 +1,21 @@
+.logo{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+@media (max-width: 991.98px) {
+
+}
+
+@media (max-width: 480px) {
+    .logo{
+        margin-left: 12px;
+    }
+}
+
+@media (max-width: 380px) {
+
+}
+
+@media (max-width: 280px) {
+
+}

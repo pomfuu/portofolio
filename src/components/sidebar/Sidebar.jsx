@@ -22,32 +22,19 @@ const Sidebar = () => {
             <div className="row">
                 <div className="col">
                     {[false].map((expand) => (
-                        <Navbar key={expand} expand={expand} className="mb-3 bg-transparent border-none">
-                        <>
-                            <Navbar.Brand href="#" className="fw-semibold logo fs-1">LIN <b style={dot}>.</b></Navbar.Brand>
-                            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} style={dot} />
-                            <Navbar.Offcanvas
-                            id={`offcanvasNavbar-expand-${expand}`}
-                            aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-                            placement="end"
-                            className="border-none"
-                            >
-                            <Offcanvas.Header closeButton>
-                                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`} className="logo border-none fs-1">
-                                LIN <b style={dot}>.</b>
-                                </Offcanvas.Title>
-                            </Offcanvas.Header>
-                            <Offcanvas.Body>
-                                <Nav className="justify-content-end flex-grow-1 pe-3 gap-3 fs-5 mx-2">
-                                <Nav.Link href="#abour">About Me</Nav.Link>
-                                <Nav.Link href="#skill">Skills</Nav.Link>
-                                <Nav.Link href="#project">Projects</Nav.Link>
-                                <Nav.Link href="#contact">Contact</Nav.Link>
+                            <Navbar expand="lg" className="mb-3 bg-transparent border-none">
+                            <Container>
+                              <Navbar.Brand href="#home" className="fw-semibold logo fs-1">LIN<b style={dot}>.</b></Navbar.Brand>
+                              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                              <Navbar.Collapse id="basic-navbar-nav">
+                                <Nav className="ms-auto gap-5">
+                                  <Nav.Link href="#skill" className=" fw-semibold menu-item" style={{ fontSize: '1.1rem', color:'#1e1e1e' }}>Skill</Nav.Link>
+                                  <Nav.Link href="#work" className=" fw-semibold menu-item" style={{ fontSize: '1.1rem', color:'#1e1e1e' }}>Projects</Nav.Link>
+                                  <Nav.Link href="#resume" className=" fw-semibold menu-item" style={{ fontSize: '1.1rem', color:'#1e1e1e' }}>Resume</Nav.Link>
                                 </Nav>
-                            </Offcanvas.Body>
-                            </Navbar.Offcanvas>
-                        </>
-                        </Navbar>
+                              </Navbar.Collapse>
+                            </Container>
+                          </Navbar>              
                     ))}
                 </div>
             </div>

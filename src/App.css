@@ -14,6 +14,16 @@
   --body-font: 'Bricolage Grotesque', sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #fbfaf5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0116CE;
+  border-radius: 5px;
+}
+
 html {
   scroll-behavior: smooth;
 }

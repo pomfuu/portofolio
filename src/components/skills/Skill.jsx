@@ -11,7 +11,7 @@ const data = [
 
 const Skill = () => {
     return (
-        <div className="container">
+        <div className="container" id="skill">
             <div className="row">
                 <p className="fs-1 fw-semibold">Technical Skills</p>
                 {data.map((item,index)=>(

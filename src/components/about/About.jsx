@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
-import Profile from '../../assets/user.png';
+import Profile from '../../assets/user2.png';
 
 class TypeWriter {
     constructor(txtElement, words, wait = 3000) {
@@ -68,8 +68,8 @@ class TypeWriter {
                     </div>
                     <div className="col-md-8 minheight">
                     <p className="name fs-3">Hi! my name is <b>Clarien Cahyono</b></p>
-                    <h1 className="txt-type fw-semibold" data-wait="2500" data-words='["Front-End Developer","UI/UX Designer", "Digital Illustrator"]' ></h1>
-                    <p className="py-4">a fifth-semester student with passion in UI/UX design, Front-End development, and Web Development. I firmly believe that a good design can create seamless digital experiences that enhance user interactions!</p>
+                    <h1 className="txt-type fw-semibold" data-wait="2500" data-words='["Front-End Developer","UI/UX Designer", "Digital Illustrator"]' style={{ fontSize:'4rem' }} ></h1>
+                    <p className="pt-3">a fifth-semester student with passion in UI/UX design, Front-End development, and Web Development. I firmly believe that a good design can create seamless digital experiences that enhance user interactions!</p>
                     </div>
                 </div>
                 </div>
